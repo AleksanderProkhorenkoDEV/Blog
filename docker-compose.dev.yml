@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile.dev
     command: ["pnpm", "dev"]
     env_file:
-      - ./front/.env
+      - .env
     volumes:
       - ./front:/app
       - /app/node_modules
@@ -23,7 +23,7 @@ services:
     image: postgres:15-alpine
     restart: always
     env_file:
-      - ./front/.env
+      - .env
     environment:
       POSTGRES_USER: $DB_USER
       POSTGRES_PASSWORD: $DB_PASSWORD
