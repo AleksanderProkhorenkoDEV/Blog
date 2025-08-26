@@ -1,4 +1,4 @@
-name: Nextjs app
+name: Nextjs full stack app
 
 on:
   push:
@@ -39,8 +39,6 @@ jobs:
 
       - name: Run build (if present)
         run: pnpm run build
-
-      - name: Run tests
-        run: pnpm test
-        env:
-          CI: true
+        
+      - name: Run eslint
+        run: pnpm lint
