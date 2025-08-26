@@ -17,7 +17,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./node-cicd/app
+        working-directory: ./front
 
     steps:
       - uses: actions/checkout@v4
