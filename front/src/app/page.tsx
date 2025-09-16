@@ -1,3 +1,9 @@
-export default function Home() {
-	return <h1>Main page</h1>
-}
+const Home: React.FC = () => {
+  return (
+    <div>
+      <h1>Main page</h1>
+    </div>
+  );
+};
+
+export default Home;
