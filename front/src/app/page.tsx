@@ -1,9 +1,10 @@
-const Home: React.FC = () => {
+import Link from "next/link";
+
+export default function Home() {
   return (
     <div>
-      <h1>Main page</h1>
+      <h1>Home page</h1>
+      <Link href={"/contact"}>contacto</Link>
     </div>
   );
-};
-
-export default Home;
+}
